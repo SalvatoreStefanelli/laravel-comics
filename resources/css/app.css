@@ -1,0 +1,41 @@
+/* #region Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --comics-primary: blue;
+    --comics-dark: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* #endregion Common */
+
+
+/* #region Header*/
+
+header {
+    text-align: center;
+
+
+    nav {
+        /* background-color: var(--comics-primary); */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+
+        & a {
+            color: var(--comics-dark);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+
+/* #endregion Header*/
