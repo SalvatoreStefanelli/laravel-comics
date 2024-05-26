@@ -1,9 +1,9 @@
 <header>        
     <nav>
             <img src="{{ Vite::asset('resources/images/dc-logo.png') }}">
-            <a href="">CHARACTERS</a>         
-            <a href="">COMICS</a>         
-            <a href="">MOVIES</a>         
+            <a href="{{route('characters')}}">CHARACTERS</a>         
+            <a href="{{route('comics')}}">COMICS</a>         
+            <a href="{{route('movies')}}">MOVIES</a>         
             <a href="">TV</a>         
             <a href="">GAMES</a>         
             <a href="">COLLECTIBLES</a>         
@@ -13,6 +13,12 @@
             <a href="">SHOP</a>         
         </nav>
 
-        <img src="{{ Vite::asset('resources/images/jumbotron.jpg') }}">
+        <div class="jumbotron">
+            <img src="{{ Vite::asset('resources/images/jumbotron.jpg') }}">
+
+        </div>
+
+
+
 
 </header>

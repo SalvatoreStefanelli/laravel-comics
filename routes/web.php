@@ -15,16 +15,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/characters', function () {
     return view('guests.characters');
-});
+})->name('characters');
 
 Route::get('/comics', function () {
-    return view('guests.comics');
-});
+
+    $volumes = config('comics.books');
+
+    return view('guests.comics', compact('volumes'));
+
+    // dd($volumes);
+})->name('comics');
 
 Route::get('/movies', function () {
     return view('guests.movies');
-});
+})->name('movies');
